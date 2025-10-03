@@ -1,0 +1,66 @@
+:root{
+--VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+--DesaturatedDarkBlue: hsl(214, 17%, 51%);
+--GrayishBlue: hsl(212, 23%, 69%);
+--LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+}
+html{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif ;
+}
+main{
+    background-color: var(--LightGrayishBlue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 300px;
+}
+section{
+    display: flex;
+    box-sizing: border-box;
+}
+article{
+    background-color: white;
+    max-width: 470px;
+    color: var(--VeryDarkGrayishBlue);
+    padding: 2.5em;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    p{
+        font-size: 1.3rem;
+    }
+}
+h1{
+    font-size: 2rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+button{
+    background-image: url('../images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 45%;
+    border-radius: 20px;
+}
+button:active{
+    background-color: var(--VeryDarkGrayishBlue);
+    background-image: url('../images/share-white.svg');
+}
