@@ -1,25 +1,18 @@
 const sharebtn = document.querySelector('button');
-
-const newdiv= document.createElement('div');
-newdiv.innerHTML=`
-<p>SHARE</p>
-<img src="./images/icon-facebook.svg" alt="icon-facebook">
-<img src="./images/icon-twitter.svg" alt="icon-twitter">
-<img src="./images/icon-pinterest.svg" alt="icon-twitter">
+const sharediv = document.querySelector('.sharebutton')
+sharebtn.innerHTML=`
+<p class="show">SHARE</p>
+<img class="show" src="./images/icon-facebook.svg" alt="icon-facebook">
+<img class="show" src="./images/icon-twitter.svg" alt="icon-twitter">
+<img class="show" src="./images/icon-pinterest.svg" alt="icon-twitter">
 `;
 
-newdiv.classList.add('share');
-newdiv.style.display = 'none';
-
-// Insert once initially
-sharebtn.before(newdiv);
+const show = document.querySelector('.show')
+show.style.display = 'none';
 
 sharebtn.addEventListener("click", () => {
-  sharebtn.classList.toggle('active');
-  if (sharebtn.classList.contains('active')) {
-    newdiv.style.display = 'flex';
-    sharebtn.style.zIndex = '1' // or 'block' as you need
-  } else {
-    newdiv.style.display = 'none';
-  }
+    sharebtn.classList.toggle('active');
+    if (sharebtn.classList.contains('active')) {
+       sharebtn.style.display = 'flex'; // or 'block' as you need
+    } 
 });
