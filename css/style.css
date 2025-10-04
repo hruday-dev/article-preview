@@ -53,28 +53,56 @@ h1{
     margin-right: 20px;
 }
 .sharebutton{
-    border: 1px solid black;
-    width: 50%;
+    width: 25%;
     position: absolute;
-    right: 3em;
-    bottom: 2em;
+    right: -6em;
+    bottom: 31.5%;
     display: flex;
-    justify-content: end;
-    padding: 1em 2em;
-    /* background-color: var(--VeryDarkGrayishBlue); */
+    justify-content: center;
+    padding: 1.3em 3em;
+    border-radius: 10px;
+}
+.drop{
+    content: ".";
+    border-width: 1.5rem;
+    border-style: solid;
+    border-color: var(--VeryDarkGrayishBlue) transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -2.9rem;
+    transform: translatex(-50%);
 }
 button{
     background-image: url('../images/icon-share.svg');
     background-repeat: no-repeat;
     background-position: center center;
     border: none;
-    height: 2.5rem;
-    width: 2.5rem;
+    position: absolute;
+    bottom: -5em;
+    right: 44%;
+    padding: 1.3em;
     border-radius: 20px;
 }
 button.active{
     background-color: var(--DesaturatedDarkBlue);
     background-image: url('../images/share-white.svg');
+}
+.show{
+    background-color: var(--VeryDarkGrayishBlue);
+}
+.socialmedia{
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+.socialmedia > p{
+    color: var(--LightGrayishBlue);
+    font-weight: 100;
+    letter-spacing: 5px;
+    
+}
+.socialmedia > img{
+    width: 2em;
 }
 
 @media screen and (max-width:700px){
@@ -105,23 +133,24 @@ button.active{
         right: 0;
         width: 82%;
         display: flex;
+        justify-content: end;
         border-radius: 0 0 10px 10px;
+        padding: 1em 2em;
+    }
+    .drop{
+        display: none;
+    }
+    button{
+        position: relative;
+        bottom: 0;
+        right: 0;
     }
     .show{
-        background-color: var(--VeryDarkGrayishBlue);
         position: relative;
         right: 3em;
     }
     .socialmedia{
-        display: flex;
         column-gap: 1.2rem;
-        align-items: center;
-    }
-    .socialmedia > p{
-        color: var(--LightGrayishBlue);
-        font-weight: 100;
-        letter-spacing: 5px;
-        
     }
     .socialmedia > img{
         width: 1.6em;
