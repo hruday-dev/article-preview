@@ -18,8 +18,9 @@ main{
     justify-content: center;
     align-items: center;
 }
-img{
+.main-img{
     max-width: 300px;
+     border-radius: 10px 0 0 10px;
 }
 section{
     display: flex;
@@ -115,6 +116,9 @@ button.active{
         align-items: center;
         box-sizing: border-box;
     }
+    .main-img{
+        border-radius: 10px 10px 0 0;
+    }
     h1{
         font-size: 1.2rem ;
     }
@@ -131,7 +135,7 @@ button.active{
     .sharebutton{
         bottom: 0;
         right: 0;
-        width: 82%;
+        width: 82.7%;
         display: flex;
         justify-content: end;
         border-radius: 0 0 10px 10px;
